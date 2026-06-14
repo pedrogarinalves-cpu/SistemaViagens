@@ -40,7 +40,7 @@ public class Pessoa{
             System.out.println("nao permitido");
         }
     }
-    
+
 
 }
 
