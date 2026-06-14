@@ -1,11 +1,12 @@
 public class Viagem{
     private int custo;
-    private String email;
+    private String país;
+    private int dias;
 
-    public Viagem( int custo, String email) {
+    public Viagem(int custo, String país, int dias) {
         this.custo = custo;
-        this.email = email;
-
+        this.país = país;
+        this.dias = dias;
     }
 
     public int getCusto() {
@@ -16,22 +17,20 @@ public class Viagem{
         this.custo = custo;
     }
 
-    public String getEmail() {
-        return email;
+    public String getPaís() {
+        return país;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setPaís(String país) {
+        this.país = país;
     }
 
-    @Override
-    public String toString() {
-        return "Viagem{" +
-                 '\'' +
-                ", custo=" + custo +
-                ", email='" + email + '\'' +
-                 +
-                '}';
+    public int getDias() {
+        return dias;
+    }
+
+    public void setDias(int dias) {
+        this.dias = dias;
     }
 
     public void Pacotes(){
@@ -41,6 +40,7 @@ public class Viagem{
                 System.out.println("Pacote frances!!");
                 String país = "França";
                 int custo = 1200;
+                int dias = 4;
 
                 break;
 
@@ -48,6 +48,7 @@ public class Viagem{
                 System.out.println("Pacote verao no RIO!!!");
                 custo = 1500;
                 país = "italia";
+                dias = 7;
 
                 break;
 
@@ -55,6 +56,7 @@ public class Viagem{
                 System.out.println("pacote Inverno canadense!!");
                 país = "canada";
                 custo = 2000;
+                dias = 5;
         }
 
     }
