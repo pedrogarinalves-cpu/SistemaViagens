@@ -1,12 +1,11 @@
 public class Viagem{
     private int custo;
     private String email;
-    private int CPF;
 
-    public Viagem( int custo, String email, int CPF) {
+    public Viagem( int custo, String email) {
         this.custo = custo;
         this.email = email;
-        this.CPF = CPF;
+
     }
 
     public int getCusto() {
@@ -25,26 +24,18 @@ public class Viagem{
         this.email = email;
     }
 
-    public int getCPF() {
-        return CPF;
-    }
-
-    public void setCPF(int CPF) {
-        this.CPF = CPF;
-    }
-
     @Override
     public String toString() {
         return "Viagem{" +
                  '\'' +
                 ", custo=" + custo +
                 ", email='" + email + '\'' +
-                ", CPF=" + CPF +
+                 +
                 '}';
     }
 
     public void Pacotes(){
-        
+
         switch (3){
             case 0:
                 System.out.println("Pacote frances!!");
