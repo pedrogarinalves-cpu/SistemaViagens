@@ -1,8 +1,4 @@
-public class empresa extends Viagem {
-
-    public empresa(int custo, String país, int dias) {
-        super(custo, país, dias);
-    }
+public class empresa {
 
     private String nomeEmpresa;
     private int Faturamento;
@@ -21,8 +17,9 @@ public class empresa extends Viagem {
         return Faturamento;
     }
 
-    public void setFaturamento(int faturamento) {
+    public boolean setFaturamento(int faturamento) {
         Faturamento = faturamento;
+        return false;
     }
 
     public int getNumFuncionarios() {
@@ -64,4 +61,5 @@ public class empresa extends Viagem {
                 ", nacional=" + nacional +
                 '}';
     }
+
 }
