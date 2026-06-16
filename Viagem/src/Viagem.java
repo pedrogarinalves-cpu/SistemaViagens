@@ -38,26 +38,30 @@ public class Viagem{
         switch (3){
             case 0:
                 System.out.println("Pacote frances!!");
-                String país = "França";
-                int custo = 1200;
-                int dias = 4;
+                this.dias = 7;
+                this.país = "França";
+                this.custo = 1500;
 
                 break;
 
             case 1:
                 System.out.println("Pacote verao no RIO!!!");
-                custo = 1500;
-                país = "italia";
-                dias = 7;
+                this.país = "Brasil";
+                this.dias = 7;
+                this.custo = 985;
 
                 break;
 
             case 2:
                 System.out.println("pacote Inverno canadense!!");
-                país = "canada";
-                custo = 2000;
-                dias = 5;
+               this.custo = 1000;
+               this.dias = 12;
+               this.país = "canada";
+
+               break;
+
         }
+
 
     }
 }

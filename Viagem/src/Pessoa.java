@@ -1,4 +1,4 @@
-public class Pessoa{
+public abstract class Pessoa{
     private String nome;
     private int idade;
     private int CPF;
@@ -33,12 +33,7 @@ public class Pessoa{
         this.CPF = CPF;
     }
 
-    public void Pemisssao(){
-        if (idade >= 18) {
-            System.out.println("Permitido a compra de pacote de viagens");
-        }else {
-            System.out.println("nao permitido");
-        }
+    public void cargo(){
     }
 
 
