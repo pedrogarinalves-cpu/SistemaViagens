@@ -40,12 +40,16 @@ public class funcionarios extends Pessoa{
         super.cargo();
         if (getIdade() == 18) {
             System.out.println("junior ou estagiario");
+            this.salario = 1200;
         } else if (getIdade() >= 25) {
             System.out.println("junior ou pleno");
+            this.salario = 2500;
         }else if (getIdade() >= 27){
             System.out.println("pleno ou senior");
+            this.salario = 4700;
         }else {
             System.out.println("senior");
+            this.salario = 8000;
         }
     }
 

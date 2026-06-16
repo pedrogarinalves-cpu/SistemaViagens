@@ -46,6 +46,11 @@ private boolean credito;
     @Override
     public void Permissao() {
         super.Permissao();
+        if (getIdade() >= 18){
+            System.out.println("Permissão concedida");
+        }else {
+            System.out.println("menor de idade, permissão negada.");
+        }
     }
 
     @Override
