@@ -52,8 +52,7 @@ public class empresa {
         }
     }
 
-    @Override
-    public String toString() {
+    public String Detalhesempresa() {
         return "empresa{" +
                 "nomeEmpresa='" + nomeEmpresa + '\'' +
                 ", Faturamento=" + Faturamento +

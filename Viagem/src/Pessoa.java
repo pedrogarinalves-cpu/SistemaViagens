@@ -35,6 +35,12 @@ public abstract class Pessoa{
 
     public void cargo(){
     }
+    public void Permissao(){
+
+    }
+    public void CreditoSuficiente() {
+
+    }
 
 
 }

@@ -33,6 +33,15 @@ public class Viagem{
         this.dias = dias;
     }
 
+
+    public String toString() {
+        return "Viagem{" +
+                "custo=" + custo +
+                ", país='" + país + '\'' +
+                ", dias=" + dias +
+                '}';
+    }
+
     public void Pacotes(){
 
         switch (3){
