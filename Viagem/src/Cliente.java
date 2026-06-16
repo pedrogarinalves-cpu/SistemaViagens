@@ -1,8 +1,17 @@
 public class Cliente extends Pessoa {
 private boolean credito;
+private int saldo;
 
-    public Cliente(String nome, int idade, int CPF) {
+    public Cliente(String nome, int idade, int CPF, int saldo) {
         super(nome, idade, CPF);
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(int saldo) {
+        this.saldo = saldo;
     }
 
     @Override
@@ -53,14 +62,16 @@ private boolean credito;
         }
     }
 
-    @Override
+       @Override
     public void CreditoSuficiente() {
         super.CreditoSuficiente();
-        if (isCredito() == true) {
-            System.out.println("saldo suficiente");
+      if (saldo >= 1500){
+          credito = true;
+          System.out.println("credito suficiente");
         }else {
-            System.out.println("saldo insuficiente");
-        }
+          credito = false;
+          System.out.println("insuficiente");
+      }
 
     }
 
