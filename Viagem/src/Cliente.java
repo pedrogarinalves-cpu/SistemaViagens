@@ -4,6 +4,7 @@ private int saldo;
 
     public Cliente(String nome, int idade, int CPF, int saldo) {
         super(nome, idade, CPF);
+        this.saldo = saldo;
     }
 
     public int getSaldo() {

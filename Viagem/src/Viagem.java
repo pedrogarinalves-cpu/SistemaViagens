@@ -42,9 +42,9 @@ public class Viagem{
                 '}';
     }
 
-    public void Pacotes(){
+    public void Pacotes(int opcao){
 
-        switch (3){
+        switch (opcao){
             case 0:
                 System.out.println("Pacote frances!!");
                 this.dias = 7;
